@@ -1,14 +1,14 @@
-# Post-Install deploiement script
-A simple Bash script to install different apps and setup the network.
+# Script de déploiement post-installation
+Un simple script Bash pour installer différentes applications et configurer le réseau.
  
-## How to install :
+## Comment l'installer :
 
-**Using git :**
+**En utilisant git :**
  
     sudo apt install git
     git clone https://github.com/Tokokane/TSSR_25.git
  
-## How to run :
+## Comment l'exécuter :
  
     cd TSSR_25
     chmod +x postinstalldebian.sh
@@ -16,4 +16,4 @@ A simple Bash script to install different apps and setup the network.
  
 ## Options
 
-    You can Accept "o" or Refuse "n" options
+    Vous pouvez Accepter "o" ou Refuser "n" les options
