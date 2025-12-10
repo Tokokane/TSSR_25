@@ -1,37 +1,3 @@
-#!/bin/bash
-#
-# Script d'installation automatique Debian - Baseline CLI
-# Basé sur les instructions thomascherrier/TSSR baseline_debian.md
-#
-
-set -e
-
-# Couleurs pour output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
-
-log_info() {
-    echo -e "${GREEN}[INFO]${NC} $1"
-}
-
-log_warn() {
-    echo -e "${YELLOW}[WARN]${NC} $1"
-}
-
-log_error() {
-    echo -e "${RED}[ERROR]${NC} $1"
-}
-
-log_section() {
-    echo ""
-    echo -e "${BLUE}========================================${NC}"
-    echo -e "${BLUE}$1${NC}"
-    echo -e "${BLUE}========================================${NC}"
-}
-
 # Vérification root
 if [[ $EUID -ne 0 ]]; then
    log_error "Ce script doit être exécuté en tant que root"
